@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            height: 80px;
+            width: 80px;
+            background-color: aqua;
+            border: 2px solid;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+            /* short form for animation
+            animation: loop 3s ease-in-out 2 alternate; */
+
+            animation-name: loop;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+        @keyframes loop {
+           0%{left: 10px; top: 0px;}
+           50%{left: 50pxpx; top: 100px;}
+           100%{left: 200px; top: 0px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box1</div>
+</body>
+</html>

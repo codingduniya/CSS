@@ -1,0 +1,33 @@
+<!-- Relaive relative_units
+px, em, %, rem -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative_units</title>
+    <style>
+        .family{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+        }
+        #parent{
+            height: 100px;
+            width: 50px;font-size: 150px;
+        }
+        #child{
+            font-size: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent" class="family">
+        parent div
+        <div  id="child" class="family">
+            child div
+        </div>
+    </div>
+</body>
+</html>
